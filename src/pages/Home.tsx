@@ -20,16 +20,52 @@ const Home = () => {
         <Text fontSize="6xl">Hi, I'm Jeffrey</Text>
         <HStack>
           <Link href="mailto:jeffrey.liu@uwaterloo.ca">
-            <Icon as={HiOutlineMail} w={6} h={6} />
+            <Icon
+              as={HiOutlineMail}
+              w={6}
+              h={6}
+              _hover={{
+                color: "#019388",
+                transform: "translate(0, -2px)",
+              }}
+              transition={"0.3s"}
+            />
           </Link>
           <Link href="https://github.com/liu-jeffrey/" target="_blank">
-            <Icon as={FiGithub} w={6} h={6} />
+            <Icon
+              as={FiGithub}
+              w={6}
+              h={6}
+              _hover={{
+                color: "#019388",
+                transform: "translate(0, -2px)",
+              }}
+              transition={"0.3s"}
+            />
           </Link>
           <Link href={Pdf} target="_blank">
-            <Icon as={CgFileDocument} w={6} h={6} />
+            <Icon
+              as={CgFileDocument}
+              w={6}
+              h={6}
+              _hover={{
+                color: "#019388",
+                transform: "translate(0, -2px)",
+              }}
+              transition={"0.3s"}
+            />
           </Link>
           <Link href="https://www.linkedin.com/in/liu-jeffrey/" target="_blank">
-            <Icon as={RiLinkedinLine} w={6} h={6} />
+            <Icon
+              as={RiLinkedinLine}
+              w={6}
+              h={6}
+              _hover={{
+                color: "#019388",
+                transform: "translate(0, -2px)",
+              }}
+              transition={"0.3s"}
+            />
           </Link>
         </HStack>
       </Flex>
