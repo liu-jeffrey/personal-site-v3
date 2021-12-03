@@ -17,15 +17,18 @@ const Home = () => {
         <Image src={portrait} />
       </Box>
       <Flex direction="column">
-        <Text fontSize="6xl">Hi, I'm Jeffrey</Text>
+        <Text fontSize="6xl" color="white">
+          Hi, I'm Jeffrey
+        </Text>
         <HStack>
           <Link href="mailto:jeffrey.liu@uwaterloo.ca">
             <Icon
+              color="white"
               as={HiOutlineMail}
               w={6}
               h={6}
               _hover={{
-                color: "#019388",
+                color: "mint.700",
                 transform: "translate(0, -2px)",
               }}
               transition={"0.3s"}
@@ -33,11 +36,12 @@ const Home = () => {
           </Link>
           <Link href="https://github.com/liu-jeffrey/" target="_blank">
             <Icon
+              color="white"
               as={FiGithub}
               w={6}
               h={6}
               _hover={{
-                color: "#019388",
+                color: "mint.700",
                 transform: "translate(0, -2px)",
               }}
               transition={"0.3s"}
@@ -45,11 +49,12 @@ const Home = () => {
           </Link>
           <Link href={Pdf} target="_blank">
             <Icon
+              color="white"
               as={CgFileDocument}
               w={6}
               h={6}
               _hover={{
-                color: "#019388",
+                color: "mint.700",
                 transform: "translate(0, -2px)",
               }}
               transition={"0.3s"}
@@ -57,11 +62,12 @@ const Home = () => {
           </Link>
           <Link href="https://www.linkedin.com/in/liu-jeffrey/" target="_blank">
             <Icon
+              color="white"
               as={RiLinkedinLine}
               w={6}
               h={6}
               _hover={{
-                color: "#019388",
+                color: "mint.700",
                 transform: "translate(0, -2px)",
               }}
               transition={"0.3s"}
