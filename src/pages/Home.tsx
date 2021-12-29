@@ -8,7 +8,7 @@ import { RiLinkedinLine } from "react-icons/ri";
 
 /* Assets */
 import portrait from "../static/dark_portrait.png";
-import Pdf from "../static/21-10-28.pdf";
+import Pdf from "../static/Jeffrey-Liu-Resume.pdf";
 
 const Home = () => {
   return (
