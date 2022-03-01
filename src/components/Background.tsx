@@ -6,7 +6,7 @@ import portrait from "../static/dark_portrait.png";
 const Background = () => {
   return (
     <Box
-      w="50vw"
+      w="100%"
       h="100vh"
       bg="black"
       sx={{

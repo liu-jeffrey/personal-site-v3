@@ -1,13 +1,4 @@
-import {
-  Flex,
-  Text,
-  Image,
-  Box,
-  HStack,
-  Icon,
-  Link,
-  useToast,
-} from "@chakra-ui/react";
+import { Flex, Text, HStack, Icon, Link } from "@chakra-ui/react";
 
 /* Icons */
 import { HiOutlineMail } from "react-icons/hi";
@@ -18,35 +9,11 @@ import { RiLinkedinLine } from "react-icons/ri";
 /* Assets */
 import Pdf from "../static/Jeffrey-Liu-Resume.pdf";
 
-/* Components */
-import CustomToast from "../components/CustomToast";
-import Emoji from "../components/Emoji";
-
 const Home = () => {
-  const wipToast = useToast();
-  const toastId = "wip-toast";
-
-  const wipMessage = "This site is still a WIP, gimme 5!";
-
-  window.onwheel = () => {
-    console.log("SCROLLED");
-    if (!wipToast.isActive(toastId)) {
-      wipToast({
-        id: toastId,
-        render: () =>
-          CustomToast({
-            icon: Emoji({ label: "rocket", symbol: "🚀" }),
-            message: wipMessage,
-          }),
-        isClosable: true,
-      });
-    }
-  };
-
   return (
     <Flex
       bg="black"
-      w="50vw"
+      w="100%"
       h="100vh"
       alignItems="flexStart"
       justify="center"

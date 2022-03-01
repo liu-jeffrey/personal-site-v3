@@ -28,6 +28,13 @@ const personalTheme = extendTheme({
       "900": "#00332F",
     },
   },
+  styles: {
+    global: () => ({
+      body: {
+        "&::-webkit-scrollbar": { display: "none" },
+      },
+    }),
+  },
 });
 
 export default personalTheme;

@@ -9,7 +9,11 @@ import personalTheme from "./theme";
 ReactDOM.render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={personalTheme.config.initialColorMode} />
-    <App />
+    <App
+    // style={{
+    //   "&::-webkit-scrollbar": { display: "none" },
+    // }}
+    />
   </React.StrictMode>,
   document.getElementById("root")
 );
