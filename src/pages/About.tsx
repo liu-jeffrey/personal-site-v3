@@ -1,5 +1,7 @@
 import { Text, Stack } from "@chakra-ui/react";
 
+import Emoji from "../components/Emoji";
+
 const About = () => {
   return (
     <Stack h="100vh" w="75%" justifyContent="center">
@@ -9,7 +11,11 @@ const About = () => {
         aspiring full-stack developer who is interested in learning and building
         impactful products.
       </Text>
-      <Text fontSize="2xl"></Text>
+      <Text fontSize="2xl">
+        I like <Emoji label={"Bacon"} symbol={"🥓"} />,{" "}
+        <Emoji label={"Tacos"} symbol={"🌮"} />, and{" "}
+        <Emoji label={"Video Games"} symbol={"🎮"} />
+      </Text>
       <Text fontSize="2xl"></Text>
     </Stack>
   );
